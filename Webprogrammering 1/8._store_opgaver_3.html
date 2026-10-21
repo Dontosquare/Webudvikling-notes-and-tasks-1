@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opgave 3</title>
+</head>
+<body>
+    <h1>Hotel Booking</h1>
+    <button onclick="price(20)">£20 per night</button>
+    <button onclick="price(50)">£50 per night</button>
+    <button onclick="price(100)">£100 per night</button>
+</body>
+</html>
+
+<script>
+    function price(value) {
+        let price = value;
+
+    switch (price) {
+        case 20: 
+            if (price < 50) {
+                console.log("You have selected the budget option.");
+            }
+            break;
+        case 50:
+            if (price === 50) {
+                console.log("You have selected the standard option.");
+            }
+            break;
+        case 100:
+            if (price > 50) {
+                console.log("You have selected the premium option.");
+            }
+            break;
+    }}
+</script>
